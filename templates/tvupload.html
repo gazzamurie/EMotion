@@ -1,0 +1,44 @@
+{% extends "header.html" %}
+
+{% block body %}
+
+<div class="container">
+  <h3>Contribute To Our TV Database!</h3>
+  <p>Please Note Our Researchers Will Input Seasons and Episodes In Due Course.</p>
+  <form method=post enctype=multipart/form-data>
+    <fieldset>
+      <div class="form-group ">
+        <input class="form-control" type="text" name="TVTitle" placeholder="Title" >
+      </div>
+      <div class="form-group">
+        <textarea class="form-control" type="text" name="TVStoryLine" placeholder="Plot" rows="3"></textarea>
+      </div>
+      <div class="form-group">
+        <input class="form-control" type="text" name="TVReleaseDate" placeholder="Realease Year" >
+      </div>
+      <div class="form-group">
+        <input class="form-control" type="text" name="TVLanguage" placeholder="Language" >
+      </div>
+      <p>For The Next Two Fields, Keep in order, For example, Cast: Andrew Lincoln, Norman Reedus ... Character: Rick Grimes, Daryl Dixon
+      <div class="form-group">
+        <input class="form-control" type="text" name="TVCast" placeholder="Cast Memebers Full Name, Seperate With Commas" >
+      </div>
+      <div class="form-group">
+        <input class="form-control" type="text" name="TVcharacter" placeholder="Characters Full Name, Seperate With Commas" >
+      </div>
+      <div class="form-group">
+        <input class="form-control" type="text" name="TVGenre" placeholder="Genre, If More Than One Applies, Seperate With Commas" >
+      </div>
+      <div class="form-group">
+        <input class="form-control" type="text" name="TVkeywords" placeholder="Keywords, Words You Would Associate With This Movie, Seperate With Commas" >
+      </div>
+      <div class="form-group">
+        <p>Movie Poster</p>
+        <input type=file name=filename >
+      </div>
+    </fieldset>
+    <button class="btn btn-primary" value="Submit">Submit</button>
+  </form>
+</div>
+
+{% endblock %}

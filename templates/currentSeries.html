@@ -1,0 +1,78 @@
+{% extends "header.html" %}
+
+{% block body %}
+
+<div class="container">
+  <div class="row" style="margin-top:20px">
+    <div class="col-md-4">
+        <img src="/static/images/{% print(tvdata[currentSeries]['filename']) %}" class="card-img-top center-block" style="height:500px; width:350px;  border-radius: 5%;">
+    </div>
+    <div class="col-md-8">
+      <h1>{{ tvdata[currentSeries]["TVTitle"] }}</h1>
+      <p>Story Line: {{ tvdata[currentSeries]["TVStoryLine"] }}</p>
+      <p>Language: {{ tvdata[currentSeries]["TVLanguage"] }}</p>
+      <p>Release Date: {{ tvdata[currentSeries]["TVReleaseDate"] }}<p>
+      {% for gen in tvdata[currentSeries]["TVgenre"] %}
+        <p>{{ gen }}</p>
+      {% endfor %}
+    </div>
+  </div>
+
+
+  <div id="accordion" role="tablist">
+    {% for season in tvdata[currentSeries]["seasons"] %}
+      <div class="card">
+        <div class="card-header" role="tab" id="heading{{ season }}">
+          <h5 class="mb-0">
+            <a data-toggle="collapse" href="#collapse{{ season }}" role="button" aria-expanded="false" aria-controls="collapse{{ season }}">
+              <p>Season {{ season }}</p>
+            </a>
+          </h5>
+        </div>
+        {% for seasoneps in tvdata[currentSeries]["episodes"][season-1] %}
+          <div id="collapse{{ season }}" class="collapse show" role="tabpanel" aria-labelledby="heading{{ season }}" data-parent="#accordion">
+            <div class="panel-body">
+              {% for eps in seasoneps %}
+                {{ eps }}
+              {% endfor %}
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    {% endfor %}
+  </div>
+
+
+  <div class="container" style="margin-top:10px">
+    <table class="table">
+      <tr>
+        <th>Cast</th>
+        <th>Character</th>
+      </tr>
+        {% for TVcast,TVchar in TVcastchar %}
+        <tr>
+            <td>{{ TVcast }}</td>
+            <td>{{ TVchar }}</td>
+        </tr>
+      {% endfor %}
+    </table>
+
+    <!-- <h3 style="margin-top:20px">Write Your Review</h3>
+    <form method=post enctype=multipart/form-data>
+      <fieldset>
+        <div class="form-group">
+            <input class="form-control" type="text" name="header" placeholder="Title Of Review" >
+        </div>
+        <div class="form-group">
+            <input class="form-control" type="number" name="vote" placeholder="Rate Of This Movie, Out Of 10" >
+        </div>
+        <div class="form-group">
+          <textarea class="form-control" type="text" name="comment" placeholder="Your Review" rows="3"></textarea>
+        </div>
+      </fieldset>
+      <button class="btn btn-primary" value="Submit">Submit</button>
+    </form> -->
+  </div>
+</div>
+
+{% endblock %}

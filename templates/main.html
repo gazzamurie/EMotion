@@ -1,0 +1,18 @@
+{% extends "header.html" %}
+
+{% block body %}
+
+<div class="container">
+  <h1>Movies</h1>
+  <div class="card-group">
+    {% for d in data %}
+      <a href="/movies/{% print(data[d]['Title']) %}/">
+        <div class="card">
+          <img class="card-img-top" src="/static/images/{% print(data[d]['filename']) %}" style="height:300px; width:200px; margin: auto;" alt="Images don't appear to be loading?">
+        </div>
+      </a>
+    {% endfor %}
+  </div>
+</div>
+
+{% endblock %}

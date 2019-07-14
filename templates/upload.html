@@ -1,0 +1,46 @@
+{% extends "header.html" %}
+
+{% block body %}
+
+<div class="container">
+  <h3>Contribute To Our Movie Database!</h3>
+  <form method=post enctype=multipart/form-data>
+    <fieldset>
+      <div class="form-group ">
+        <input class="form-control" type="text" name="Title" placeholder="Title" >
+      </div>
+      <div class="form-group">
+        <textarea class="form-control" type="text" name="StoryLine" placeholder="Plot" rows="3"></textarea>
+      </div>
+      <div class="form-group">
+        <input class="form-control" type="text" name="ReleaseDate" placeholder="Realease Date 20 November 2017" >
+      </div>
+      <div class="form-group">
+        <input class="form-control" type="text" name="Language" placeholder="Language" >
+      </div>
+      <div class="form-group">
+        <input class="form-control" type="text" name="age" placeholder="Age Restriction" >
+      </div>
+      <p>For The Next Two Fields, Keep in order, For example, Cast: Owen Wilson, Larry the Cable Guy ... Character: Lightning McQueen, Mator
+      <div class="form-group">
+        <input class="form-control" type="text" name="Cast" placeholder="Cast Memebers Full Name, Seperate With Commas" >
+      </div>
+      <div class="form-group">
+        <input class="form-control" type="text" name="character" placeholder="Characters Full Name, Seperate With Commas" >
+      </div>
+      <div class="form-group">
+        <input class="form-control" type="text" name="Genre" placeholder="Genre, If More Than One Applies, Seperate With Commas" >
+      </div>
+      <div class="form-group">
+        <input class="form-control" type="text" name="keywords" placeholder="Keywords, Words You Would Associate With This Movie, Seperate With Commas" >
+      </div>
+      <div class="form-group">
+        <p>Movie Poster</p>
+        <input type=file name=filename >
+      </div>
+    </fieldset>
+    <button class="btn btn-primary" value="Submit">Submit</button>
+  </form>
+</div>
+
+{% endblock %}

@@ -1,0 +1,30 @@
+{% extends "header.html" %}
+
+{% block body %}
+
+<div class="container">
+  <div class="row">
+    <h3>About</h3>
+  </div>
+  <p>E-Motion a movie and TV review website, explore new and old movies, review them, see our editors reviews.
+      Help contribute to our database by signing up and adding new movies! </p>
+  <div class="row">
+    <h3>Contact Us</h3>
+  </div>
+  <form method=post>
+    <div class="row">
+      <div class="col">
+        <input type="text" name="conName" class="form-control" placeholder="Name">
+      </div>
+      <div class="col">
+        <input type="text"  name="conEmail" class="form-control" placeholder="Email">
+      </div>
+    </div>
+    <div class="form-group">
+      <textarea class="form-control" type="text" name="conMess" placeholder="Your Message" rows="3"></textarea>
+    </div>
+    <button class="btn btn-primary" style="float: right" value="Submit">Submit</button>
+  </form>
+</div>
+
+{% endblock %}
