@@ -11,7 +11,7 @@ import os
 import itertools
 
 UPLOAD_FOLDER = '/var/www/FlaskApp/FlaskApp/static/images'
-ALLOWED_EXTENSIONS = set(['txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif'])
+ALLOWED_EXTENSIONS = set(['pdf', 'png', 'jpg', 'jpeg', 'gif'])
 
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
@@ -128,7 +128,7 @@ def login_page():
     try:
         c, conn = connection()
 
-        error = None
+        error = " "
         if request.method == "POST":
             data = c.execute("SELECT * FROM users WHERE username = (%s)",
                              [thwart(request.form['username'])])
