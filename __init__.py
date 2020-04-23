@@ -6,15 +6,18 @@ from functools import wraps
 from MySQLdb import escape_string as thwart
 from dbconnect import connection
 from werkzeug.utils import secure_filename
+from flask_pymongo import PyMongo
 import gc
 import os
 import itertools
-
 UPLOAD_FOLDER = '/var/www/FlaskApp/FlaskApp/static/images'
 ALLOWED_EXTENSIONS = set(['pdf', 'png', 'jpg', 'jpeg', 'gif'])
 
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+app.config["MONGO_URI"] = "mongodb://localhost:27017/myDatabase"
+mongo = PyMongo(app)
+
 
 def allowed_file(filename):
     return '.' in filename and \
@@ -47,12 +50,12 @@ def currentSeriesMap(form, filename):
     currentSeries["filename"] = filename
     return currentSeries
 
-def wrongFormMap(form):
-    wrongForm= {}
-    wrongForm["wrongName"] = form["wrongName"]
-    wrongForm["wrongEmail"] = form["wrongEmail"]
-    wrongForm["wrongMess"] = form["wrongMess"]
-    return wrongForm
+# def wrongFormMap(form):
+#     wrongForm= {}
+#     wrongForm["wrongName"] = form["wrongName"]
+#     wrongForm["wrongEmail"] = form["wrongEmail"]
+#     wrongForm["wrongMess"] = form["wrongMess"]
+#     return wrongForm
 
 with open('/var/www/FlaskApp/FlaskApp/static/movies.json') as in_file:
     data = json.load(in_file)
@@ -64,11 +67,10 @@ with open('/var/www/FlaskApp/FlaskApp/static/tv.json') as in_filetv:
 
 @app.route('/', methods=['GET', 'POST'])
 def homepage():
-    if request.method == "POST" and "wrongName" in request.form:
-        data[request.form["wrongForm"]] = wrongFormMap(request.form)
-        flash("IT WORKED")
-        return render_template("main.html", data=data)
-    return render_template("main.html", data=data)
+    doc = mongo.db.test.insert({'abcd':'abcd'})
+    return "Inserted"
+        # return render_template("main.html", data=data)
+    # return render_template("main.html", data=data)
 
 @app.route('/tv/', methods=['GET', 'POST'])
 def tvpage():
