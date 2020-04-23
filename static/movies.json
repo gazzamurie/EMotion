@@ -1,1 +1,107 @@
-{"Cars": {"Language": "English", "ReleaseDate": "9 June 2006", "StoryLine": "A hot-shot race-car named Lightning McQueen gets waylaid in Radiator Springs, where he finds the true meaning of friendship and family.", "Title": "Cars", "Trailer": "https://www.youtube.com/embed/SbXIj2T-_uk?rel=0", "cast": ["Owen Wilson", "someoneelse"], "character": ["Lightning McQueen", "Mator"], "filename": "carsPoster.jpg", "reviews": [{"comment": "This is such a good movie.", "header": "Pure Joy"}, {"comment": "This is such a good movie.", "header": "Great."}]}, "Elf": {"Language": "English", "ReleaseDate": "28 November 2003 (UK)", "StoryLine": "After inadvertently wreaking havoc on the elf community due to his ungainly size, a man raised as an elf at the North Pole is sent to the U.S. in search of his true identity.", "Title": "Elf", "Trailer": "https://www.youtube.com/embed/LMPyILBePfI?rel=0", "age": "PG", "cast": ["Will Ferrell", "James Caan", "Bob Newhart", "Edward Asner", "Mary Steenburgen", "Zooey Deschanel", "Daniel Tay"], "character": ["Buddy", "Walter", "Papa Elf", "Santa", "Emily", "Jovie", "Michael"], "filename": "MV5BMzUxNzkzMzQtYjIxZC00NzU0LThkYTQtZjNhNTljMTA1MDA1L2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMTMxODk2OTU._V1_.jpg", "genre": ["Comedy", "Family", "Fantasy", "Romance"]}, "Iron Man": {"Language": "English", "ReleaseDate": "2 May 2008", "StoryLine": "After being held captive in an Afghan cave, billionaire engineer Tony Stark creates a unique weaponized suit of armor to fight evil.", "Title": "Iron Man", "Trailer": "https://www.youtube.com/embed/KAE5ymVLmZg", "cast": ["Robert Downey Jr.", "Terrence Howard", "Jeff Bridges", "Gwyneth Paltrow", "Leslie Bibb", "Shaun Toub", "Faran Tahir", "Clark Gregg", "Bill Smitrovich", "Sayed Badreya", "Paul Bettany", "Jon Favreau", "Peter Billingsley", "Tim Guinee"], "character": ["Tony Stark / Iron Man", "Rhodey", "Obadiah Stane", "Pepper Potts", "Christine Everhart", "Yinsen", "Raza", "Agent Coulson", "General Gabriel", "Abu Bakaar", "JARVIS (voice)", "Hogan", "William Ginter Riva", "Major Allen"], "filename": "ironman.jpg", "reviews": [{"comment": "This is such a good movie.", "header": "Great."}, {"comment": "This is such a good movie.", "header": "Great."}]}, "The Hunger Games": {"Language": "English", "ReleaseDate": "23 March 2012 (UK)", "StoryLine": "Katniss Everdeen voluntarily takes her younger sister's place in the Hunger Games: a televised competition in which two teenagers from each of the twelve Districts of Panem are chosen at random to fight to the death.", "Title": "The Hunger Games", "Trailer": "https://www.youtube.com/embed/mfmrPu43DF8?rel=0", "age": "12A", "cast": ["Stanley Tucci", "Wes Bentley", "Jennifer Lawrence", "Willow Shields", "Liam Hemsworth", "Elizabeth Banks", "Sandra Ellis Lafferty", "Paula Malcomson"], "character": ["Caesar Flickerman", "Seneca Crane", "Katniss Everdeen", "Primrose Everdeen", "Gale Hawthorne", "Effie Trinket", "Hob Vendor", "Katniss' Mother"], "filename": "MV5BMjA4NDg3NzYxMF5BMl5BanBnXkFtZTcwNTgyNzkyNw._V1_SY1000_CR006741000_AL_.jpg", "genre": ["Adventure", "Sci-Fi", "Thriller "]}, "The Hunger Games: Catching Fire": {"Language": "English", "ReleaseDate": "22 November 2013 (USA)", "StoryLine": "Katniss Everdeen and Peeta Mellark become targets of the Capitol after their victory in the 74th Hunger Games sparks a rebellion in the Districts of Panem.", "Title": "The Hunger Games: Catching Fire", "age": "PG-13", "cast": ["Jennifer Lawrence", "Liam Hemsworth", "Jack Quaid", "Taylor St. Clair", "Sandra Ellis Lafferty", "Woody Harrelson", "Josh Hutcherson", "Paula Malcomson", "Willow Shields", "Donald Sutherland", "Elizabeth Banks"], "character": ["Katniss Everdeen", "Gale Hawthorne", "Marvel", "Ripper", "Greasy Sae", "Haymitch Abernathy", "Peeta Mellark", "Katniss' Mother", "Primrose Everdeen", "President Snow", "Effie Trinket"], "filename": "catching.jpg", "genre": ["Action", " Adventure", " Mystery "], "keywords": ["Hunger", "Games", "Catching", "Fire", "Katniss", "Everdeen", "Jennifer", "Lawrence"]}, "WALL-E": {"Language": "English", "ReleaseDate": "18 July 2008 (UK)", "StoryLine": "In the distant future, a small waste-collecting robot inadvertently embarks on a space journey that will ultimately decide the fate of mankind.", "Title": "WALL-E", "Trailer": "https://www.youtube.com/embed/alIq_wG9FNk?rel=0", "cast": ["Ben Burtt", "Elissa Knight", "Jeff Garlin", "Fred Willard", "MacInTalk", "John Ratzenberger", "Kathy Najimy", "Sigourney Weaver"], "character": ["WALL\u00b7E", "EVE", "Captain", "Shelby Forthright", "AUTO", "John", "Mary", "Ship's Computer"], "filename": "walleposter.jpg", "reviews": []}}
+{
+  "Avenger: Endgame": {
+    "Language": "English",
+    "ReleaseDate": "26 April 2019",
+    "StoryLine": "Avengers: Endgame picks up after the events of Avengers: Infinity War, which saw the Avengers divided and defeated. Thanos won the day and used the Infinity Stones to snap away half of all life in the universe. Only the original Avengers - Iron Man, Captain America, Thor, Hulk, Black Widow, and Hawkeye remain, along with some key allies like War Machine, Ant-Man, Rocket Raccoon, Nebula, and Captain Marvel. Each of the survivors deals with the fallout from Thanos' decimation in different ways, but when an opportunity presents itself to potentially save those who vanished, they all come together and set out to defeat Thanos, once and for all.",
+    "Title": "Avenger: Endgame",
+    "age": "PG-13",
+    "cast": ["Robert Downey Jr", "Chris Evans", "Mark Ruffalo", "Chris Hemsworth", "Scarlett Johansson", "Jeremy Renner", "Don Cheadle", "Paul Rudd", "\tBenedict Cumberbatch"],
+    "character": ["Tony Stark / Iron Man", "Steve Rogers / Captain America", "Bruce Banner / Hulk", "Thor", "Natasha Romanoff / Black Widow", "\tClint Barton / Hawkeye", "James Rhodes / War Machine", "\tScott Lang / Ant-Man", "Doctor Strange"],
+    "filename": "avngersendgameposter.jpg",
+    "genre": ["Action", "Adventure", "Sci-Fi"],
+    "keywords": ["Avenger", "EndGame"]
+  },
+  "Cars": {
+    "Language": "English",
+    "ReleaseDate": "9 June 2006",
+    "StoryLine": "A hot-shot race-car named Lightning McQueen gets waylaid in Radiator Springs, where he finds the true meaning of friendship and family.",
+    "Title": "Cars",
+    "Trailer": "https://www.youtube.com/embed/SbXIj2T-_uk?rel=0",
+    "cast": ["Owen Wilson", "someoneelse"],
+    "character": ["Lightning McQueen", "Mator"],
+    "filename": "carsPoster.jpg",
+    "reviews": [{
+      "comment": "This is such a good movie.",
+      "header": "Pure Joy"
+    }, {
+      "comment": "This is such a good movie.",
+      "header": "Great."
+    }]
+  },
+  "Dirty Dancing": {
+    "Language": "English",
+    "ReleaseDate": "21 August 1987",
+    "StoryLine": "In 1963, Frances \"Baby\" Houseman, a sweet daddy's girl, goes with her family to a resort in upstate New York's Catskill Mountains. Baby has grown up in privileged surroundings and all expect her to go on to college, join the Peace Corps and save the world before marrying a doctor, just like her father. Unexpectedly, Baby becomes infatuated with the camp's dance instructor, Johnny Castle, a man whose background is vastly different from her own. Baby lies to her father to get money to pay for an illegal abortion for Johnny's dance partner. She then fills in as Johnny's dance partner and it is as he is teaching her the dance routine that they fall in love. It all comes apart when Johnny's friend falls seriously ill after her abortion and Baby gets her father, who saves the girl's life. He then learns what Baby has been up to, who with and worse, that he funded the illegal abortion. He bans his daughter from any further association with \"those people\". In the first deliberately willful action of her life, Baby later sneaks out to see Johnny, ostensibly to apologize for her father's rudeness, and ends up consummating her relationship with Johnny. A jealous fellow vacationer sees Baby sneaking out of Johnny's bungalow the next morning, and in an act of retribution, tells management that he is responsible for a theft the evening before, knowing he would not furnish his real whereabouts.",
+    "Title": "Dirty Dancing",
+    "age": "PG-13",
+    "cast": ["Jennifer Grey", " Patrick Swayze", " Jerry Orbach", " Cynthia Rhodes", " Jack Weston", " Jane Brucker"],
+    "character": ["Baby Houseman", "Johnny Castle", "Jake Houseman", "Penny Johnson", "\tMax Kellerman", "Lisa Houseman"],
+    "filename": "dirtydanceposter.jpg",
+    "genre": ["Drama", "Music", "Romance"],
+    "keywords": ["Dirty", " Dancing", " Dance"]
+  },
+  "Elf": {
+    "Language": "English",
+    "ReleaseDate": "28 November 2003 (UK)",
+    "StoryLine": "After inadvertently wreaking havoc on the elf community due to his ungainly size, a man raised as an elf at the North Pole is sent to the U.S. in search of his true identity.",
+    "Title": "Elf",
+    "Trailer": "https://www.youtube.com/embed/LMPyILBePfI?rel=0",
+    "age": "PG",
+    "cast": ["Will Ferrell", "James Caan", "Bob Newhart", "Edward Asner", "Mary Steenburgen", "Zooey Deschanel", "Daniel Tay"],
+    "character": ["Buddy", "Walter", "Papa Elf", "Santa", "Emily", "Jovie", "Michael"],
+    "filename": "MV5BMzUxNzkzMzQtYjIxZC00NzU0LThkYTQtZjNhNTljMTA1MDA1L2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMTMxODk2OTU._V1_.jpg",
+    "genre": ["Comedy", "Family", "Fantasy", "Romance"]
+  },
+  "Iron Man": {
+    "Language": "English",
+    "ReleaseDate": "2 May 2008",
+    "StoryLine": "After being held captive in an Afghan cave, billionaire engineer Tony Stark creates a unique weaponized suit of armor to fight evil.",
+    "Title": "Iron Man",
+    "Trailer": "https://www.youtube.com/embed/KAE5ymVLmZg",
+    "cast": ["Robert Downey Jr.", "Terrence Howard", "Jeff Bridges", "Gwyneth Paltrow", "Leslie Bibb", "Shaun Toub", "Faran Tahir", "Clark Gregg", "Bill Smitrovich", "Sayed Badreya", "Paul Bettany", "Jon Favreau", "Peter Billingsley", "Tim Guinee"],
+    "character": ["Tony Stark / Iron Man", "Rhodey", "Obadiah Stane", "Pepper Potts", "Christine Everhart", "Yinsen", "Raza", "Agent Coulson", "General Gabriel", "Abu Bakaar", "JARVIS (voice)", "Hogan", "William Ginter Riva", "Major Allen"],
+    "filename": "ironman.jpg",
+    "reviews": [{
+      "comment": "This is such a good movie.",
+      "header": "Great."
+    }, {
+      "comment": "This is such a good movie.",
+      "header": "Great."
+    }]
+  },
+  "The Hunger Games": {
+    "Language": "English",
+    "ReleaseDate": "23 March 2012 (UK)",
+    "StoryLine": "Katniss Everdeen voluntarily takes her younger sister's place in the Hunger Games: a televised competition in which two teenagers from each of the twelve Districts of Panem are chosen at random to fight to the death.",
+    "Title": "The Hunger Games",
+    "Trailer": "https://www.youtube.com/embed/mfmrPu43DF8?rel=0",
+    "age": "12A",
+    "cast": ["Stanley Tucci", "Wes Bentley", "Jennifer Lawrence", "Willow Shields", "Liam Hemsworth", "Elizabeth Banks", "Sandra Ellis Lafferty", "Paula Malcomson"],
+    "character": ["Caesar Flickerman", "Seneca Crane", "Katniss Everdeen", "Primrose Everdeen", "Gale Hawthorne", "Effie Trinket", "Hob Vendor", "Katniss' Mother"],
+    "filename": "MV5BMjA4NDg3NzYxMF5BMl5BanBnXkFtZTcwNTgyNzkyNw._V1_SY1000_CR006741000_AL_.jpg",
+    "genre": ["Adventure", "Sci-Fi", "Thriller "]
+  },
+  "The Hunger Games: Catching Fire": {
+    "Language": "English",
+    "ReleaseDate": "22 November 2013 (USA)",
+    "StoryLine": "Katniss Everdeen and Peeta Mellark become targets of the Capitol after their victory in the 74th Hunger Games sparks a rebellion in the Districts of Panem.",
+    "Title": "The Hunger Games: Catching Fire",
+    "age": "PG-13",
+    "cast": ["Jennifer Lawrence", "Liam Hemsworth", "Jack Quaid", "Taylor St. Clair", "Sandra Ellis Lafferty", "Woody Harrelson", "Josh Hutcherson", "Paula Malcomson", "Willow Shields", "Donald Sutherland", "Elizabeth Banks"],
+    "character": ["Katniss Everdeen", "Gale Hawthorne", "Marvel", "Ripper", "Greasy Sae", "Haymitch Abernathy", "Peeta Mellark", "Katniss' Mother", "Primrose Everdeen", "President Snow", "Effie Trinket"],
+    "filename": "catching.jpg",
+    "genre": ["Action", " Adventure", " Mystery "],
+    "keywords": ["Hunger", "Games", "Catching", "Fire", "Katniss", "Everdeen", "Jennifer", "Lawrence"]
+  },
+  "WALL-E": {
+    "Language": "English",
+    "ReleaseDate": "18 July 2008 (UK)",
+    "StoryLine": "In the distant future, a small waste-collecting robot inadvertently embarks on a space journey that will ultimately decide the fate of mankind.",
+    "Title": "WALL-E",
+    "Trailer": "https://www.youtube.com/embed/alIq_wG9FNk?rel=0",
+    "cast": ["Ben Burtt", "Elissa Knight", "Jeff Garlin", "Fred Willard", "MacInTalk", "John Ratzenberger", "Kathy Najimy", "Sigourney Weaver"],
+    "character": ["WALL\u00b7E", "EVE", "Captain", "Shelby Forthright", "AUTO", "John", "Mary", "Ship's Computer"],
+    "filename": "walleposter.jpg",
+    "reviews": []
+  }
+}

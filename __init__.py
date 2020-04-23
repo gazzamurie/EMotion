@@ -47,6 +47,13 @@ def currentSeriesMap(form, filename):
     currentSeries["filename"] = filename
     return currentSeries
 
+def wrongFormMap(form):
+    wrongForm= {}
+    wrongForm["wrongName"] = form["wrongName"]
+    wrongForm["wrongEmail"] = form["wrongEmail"]
+    wrongForm["wrongMess"] = form["wrongMess"]
+    return wrongForm
+
 with open('/var/www/FlaskApp/FlaskApp/static/movies.json') as in_file:
     data = json.load(in_file)
     in_file.close()
@@ -57,6 +64,10 @@ with open('/var/www/FlaskApp/FlaskApp/static/tv.json') as in_filetv:
 
 @app.route('/', methods=['GET', 'POST'])
 def homepage():
+    if request.method == "POST" and "wrongName" in request.form:
+        data[request.form["wrongForm"]] = wrongFormMap(request.form)
+        flash("IT WORKED")
+        return render_template("main.html", data=data)
     return render_template("main.html", data=data)
 
 @app.route('/tv/', methods=['GET', 'POST'])
@@ -194,6 +205,25 @@ def signup_page():
 
 @app.route('/movies/<currentMovie>/', methods=["GET","POST"])
 def currentMovie(currentMovie):
+
+
+    # if request.method == "POST" and "Title" in request.form:
+    #     data[request.form["Title"]] = currentMovieMap(request.form, filename)
+    #     with open('/var/www/FlaskApp/FlaskApp/static/movies.json', 'w') as outfile:
+    #         json.dump(data, outfile)
+    #     flash("Your Submission Has Been Submitted For Review, Thanks For Contributing!")
+    #     return render_template("main.html", data=data, filename=filename)
+        if request.method == "post":
+            data[request.form["Title"]] = currentMovieMap(request.form, filename)
+            with open('/var/www/FlaskApp/FlaskApp/static/movies.json', 'w') as outfile:
+                 review = "reviews"[{
+                 "comment": comment,
+                 "header": header},]
+
+        temp = data["Title"]
+        temp.append(review)
+
+
         cast = data[currentMovie]["cast"]
         char = data[currentMovie]["character"]
 	return render_template("currentMovie.html", data=data, currentMovie=currentMovie, castchar=zip(cast,char))

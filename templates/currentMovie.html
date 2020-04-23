@@ -54,37 +54,7 @@
       {% endfor %}
     </table>
       </div>
-    <div class="row">
-      <div class="col">
-        </div>
-        <div class="col">
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#somethingWrongModal">
-            Information Wrong?
-          </button>
-          </div>
-          <div class="col">
-            </div>
-    </div>
 
-    <div class="modal fade" id="somethingWrongModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
   <h2 style="margin-top:10px">Reviews</h2>
     <div class="row" style="margin-top:10px">
       {% for review in data[currentMovie]["reviews"] %}
@@ -94,8 +64,9 @@
       </div>
       {% endfor %}
     </div>
+    {% if session.logged_in %}
     <h3 style="margin-top:20px">Write Your Review</h3>
-    <!-- <form method=post enctype=multipart/form-data>
+    <form method=post enctype=multipart/form-data>
       <fieldset>
         <div class="form-group">
             <input class="form-control" type="text" name="header" placeholder="Title Of Review" >
@@ -104,11 +75,14 @@
             <input class="form-control" type="number" name="vote" placeholder="Rate Of This Movie, Out Of 10" >
         </div>
         <div class="form-group">
-          <textarea class="form-control" type="text" name="comment" placeholder="Your Review" rows="3"></textarea>
+          <textarea classheadr="form-control" type="text" name="comment" placeholder="Your Review" rows="3"></textarea>
         </div>
       </fieldset>
       <button class="btn btn-primary" value="Submit">Submit</button>
-    </form> -->
+    </form>
+    {% else %}
+    <P>This is else is user isnt logged in</p>
+      {% endif %}
 </div>
 
 {% endblock %}

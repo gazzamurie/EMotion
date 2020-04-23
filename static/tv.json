@@ -12,13 +12,14 @@
     "TVgenre": [""],
     "TVkeywords": ["dead", "zombies"],
     "seasons": [1, 2, 3, 4, 5, 6, 7],
-    "episodes": [ ["1-Days Gone Bye", "2-Guts", "3-Tell It to the Frogs", "4-Vatos", "5-Wildfire", "6-TS-19"],
-                  ["S2-ep1","S2-ep2"],
-                  ["S3-ep1","S3-ep2"],
-                  ["S4-ep1","S4-ep2"],
-                  ["S5-ep1","S5-ep2"],
-                  ["S6-ep1","S6-ep2"],
-                  ["S7-ep1","S7-ep2"]]
-
+    "episodes": [
+      ["1-Days Gone Bye", "2-Guts", "3-Tell It to the Frogs", "4-Vatos", "5-Wildfire", "6-TS-19"],
+      ["S2-ep1","S2-ep2"],
+      ["S3-ep1","S3-ep2"],
+      ["S4-ep1","S4-ep2"],
+      ["S5-ep1","S5-ep2"],
+      ["S6-ep1","S6-ep2"],
+      ["S7-ep1","S7-ep2"]
+    ]
               }
 }
