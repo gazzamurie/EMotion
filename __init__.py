@@ -67,10 +67,7 @@ with open('/var/www/FlaskApp/FlaskApp/static/tv.json') as in_filetv:
 
 @app.route('/', methods=['GET', 'POST'])
 def homepage():
-    doc = mongo.db.test.insert({'abcd':'abcd'})
-    return "Inserted"
-        # return render_template("main.html", data=data)
-    # return render_template("main.html", data=data)
+    return render_template("main.html", data=data)
 
 @app.route('/tv/', methods=['GET', 'POST'])
 def tvpage():
@@ -102,14 +99,32 @@ def logout():
 @login_required
 def upload():
     if request.method == "POST" and "filename" in request.files:
+        #Checks file against condiitions and save the file path to mongodb
         file = request.files['filename']
         if file and allowed_file(file.filename):
             filename = secure_filename(file.filename)
             file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
     if request.method == "POST" and "Title" in request.form:
         data[request.form["Title"]] = currentMovieMap(request.form, filename)
-        with open('/var/www/FlaskApp/FlaskApp/static/movies.json', 'w') as outfile:
-            json.dump(data, outfile)
+        mongo.db.test.insert(data)
+        # doc = mongo.db.test.insert({
+        # "title": request.form('Title'),
+        # "storyline": request.form("StoryLine"),
+        # "releasedate": request.form("ReleaseDate"),
+        # "language": request.form("Language"),
+        # "cast": request.form("Cast").split(","),
+        # "character": request.form("Character").split(","),
+        # "age": request.form("Age"),
+        # "keywords": request.form("KeyWords").split(","),
+        # "filename": filename
+        # })
+
+
+        # data[request.form["Title"]] = currentMovieMap(request.form, filename)
+        # mongo.save_file(filename, request.files["filename"])
+
+        # with open('/var/www/FlaskApp/FlaskApp/static/movies.json', 'w') as outfile:
+        #     json.dump(data, outfile)
         flash("Your Submission Has Been Submitted For Review, Thanks For Contributing!")
         return render_template("main.html", data=data, filename=filename)
     return render_template("upload.html", data=data)
@@ -215,15 +230,15 @@ def currentMovie(currentMovie):
     #         json.dump(data, outfile)
     #     flash("Your Submission Has Been Submitted For Review, Thanks For Contributing!")
     #     return render_template("main.html", data=data, filename=filename)
-        if request.method == "post":
-            data[request.form["Title"]] = currentMovieMap(request.form, filename)
-            with open('/var/www/FlaskApp/FlaskApp/static/movies.json', 'w') as outfile:
-                 review = "reviews"[{
-                 "comment": comment,
-                 "header": header},]
-
-        temp = data["Title"]
-        temp.append(review)
+        # if request.method == "post":
+        #     data[request.form["Title"]] = currentMovieMap(request.form, filename)
+        #     with open('/var/www/FlaskApp/FlaskApp/static/movies.json', 'w') as outfile:
+        #          review = "reviews"[{
+        #          "comment": comment,
+        #          "header": header},]
+        #
+        # temp = data["Title"]
+        # temp.append(review)
 
 
         cast = data[currentMovie]["cast"]
